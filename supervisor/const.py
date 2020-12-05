@@ -6,8 +6,8 @@ from pathlib import Path
 SUPERVISOR_VERSION = "DEV"
 
 URL_HASSIO_ADDONS = "https://github.com/home-assistant/addons"
-URL_HASSIO_APPARMOR = "https://version.home-assistant.io/apparmor.txt"
-URL_HASSIO_VERSION = "https://version.home-assistant.io/{channel}.json"
+URL_HASSIO_APPARMOR = "https://vath.s3-eu-west-1.amazonaws.com/apparmor.txt"
+URL_HASSIO_VERSION = "https://vath.s3-eu-west-1.amazonaws.com/{channel}.json"
 
 SUPERVISOR_DATA = Path("/data")
 
