@@ -23,7 +23,7 @@ from tests.common import exists_fixture, load_fixture, load_json_fixture
 @pytest.fixture
 def docker() -> DockerAPI:
     """Mock DockerAPI."""
-    images = [MagicMock(tags=["homeassistant/amd64-hassio-supervisor:latest"])]
+    images = [MagicMock(tags=["b46ha/amd64-hassio-supervisor:latest"])]
 
     with patch("docker.DockerClient", return_value=MagicMock()), patch(
         "supervisor.docker.DockerAPI.images", return_value=MagicMock()

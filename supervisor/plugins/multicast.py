@@ -47,7 +47,7 @@ class Multicast(JsonConfig, CoreSysAttributes):
         """Return current image of Multicast."""
         if self._data.get(ATTR_IMAGE):
             return self._data[ATTR_IMAGE]
-        return f"homeassistant/{self.sys_arch.supervisor}-hassio-multicast"
+        return f"b46ha/{self.sys_arch.supervisor}-hassio-multicast"
 
     @image.setter
     def image(self, value: str) -> None:

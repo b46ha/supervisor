@@ -64,7 +64,7 @@ class Audio(JsonConfig, CoreSysAttributes):
         """Return current image of Audio."""
         if self._data.get(ATTR_IMAGE):
             return self._data[ATTR_IMAGE]
-        return f"homeassistant/{self.sys_arch.supervisor}-hassio-audio"
+        return f"b46ha/{self.sys_arch.supervisor}-hassio-audio"
 
     @image.setter
     def image(self, value: str) -> None:

@@ -49,7 +49,7 @@ class Observer(CoreSysAttributes, JsonConfig):
         """Return current image of observer."""
         if self._data.get(ATTR_IMAGE):
             return self._data[ATTR_IMAGE]
-        return f"homeassistant/{self.sys_arch.supervisor}-hassio-observer"
+        return f"b46ha/{self.sys_arch.supervisor}-hassio-observer"
 
     @image.setter
     def image(self, value: str) -> None:

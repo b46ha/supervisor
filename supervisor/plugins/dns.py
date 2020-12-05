@@ -103,7 +103,7 @@ class CoreDNS(JsonConfig, CoreSysAttributes):
         """Return current image of DNS."""
         if self._data.get(ATTR_IMAGE):
             return self._data[ATTR_IMAGE]
-        return f"homeassistant/{self.sys_arch.supervisor}-hassio-dns"
+        return f"b46ha/{self.sys_arch.supervisor}-hassio-dns"
 
     @image.setter
     def image(self, value: str) -> None:

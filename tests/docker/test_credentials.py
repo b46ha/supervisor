@@ -35,6 +35,6 @@ def test_matching_credentials(coresys: CoreSys):
     credentials = docker._get_credentials("ghcr.io/homeassistant/amd64-supervisor")
     assert credentials["registry"] == "ghcr.io"
 
-    credentials = docker._get_credentials("homeassistant/amd64-supervisor")
+    credentials = docker._get_credentials("b46ha/amd64-supervisor")
     assert credentials["username"] == "Spongebob Squarepants"
     assert "registry" not in credentials
