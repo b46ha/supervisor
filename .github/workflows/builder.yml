@@ -119,7 +119,7 @@ jobs:
 
       - name: Update version file
         if: needs.init.outputs.publish == 'true'
-        uses: home-assistant/actions/helpers/version-push@master
+        uses: b46ha/actions/helpers/version-push@master
         with:
           key: ${{ env.BUILD_NAME }}
           version: ${{ needs.init.outputs.version }}
