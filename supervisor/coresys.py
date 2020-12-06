@@ -66,7 +66,7 @@ class CoreSys:
         self._core: Optional[Core] = None
         self._arch: Optional[CpuArch] = None
         self._auth: Optional[Auth] = None
-        self._homeassistant: Optional[HomeAssistant] = None
+        # self._homeassistant: Optional[HomeAssistant] = None
         self._supervisor: Optional[Supervisor] = None
         self._addons: Optional[AddonManager] = None
         self._api: Optional[RestAPI] = None
