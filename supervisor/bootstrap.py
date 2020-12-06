@@ -69,7 +69,7 @@ async def initialize_coresys() -> CoreSys:
     coresys.updater = Updater(coresys)
     coresys.api = RestAPI(coresys)
     coresys.supervisor = Supervisor(coresys)
-    coresys.homeassistant = HomeAssistant(coresys)
+    # coresys.homeassistant = HomeAssistant(coresys)
     coresys.addons = AddonManager(coresys)
     coresys.snapshots = SnapshotManager(coresys)
     coresys.host = HostManager(coresys)
