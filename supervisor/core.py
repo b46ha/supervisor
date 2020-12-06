@@ -96,7 +96,7 @@ class Core(CoreSysAttributes):
             # load last available data
             self.sys_updater.load(),
             # Load Home Assistant
-            self.sys_homeassistant.load(),
+            # self.sys_homeassistant.load(),
             # Load CPU/Arch
             self.sys_arch.load(),
             # Load HassOS
